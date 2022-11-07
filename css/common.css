@@ -1,3 +1,4 @@
+/*header*/
 #headerWrap {
   width: 100%;
   border-bottom: black 2px solid;
@@ -8,7 +9,56 @@
   width: 100%;
   height: 64px;
   background: rgb(255, 197, 197);
+  display:flex;
+  justify-content:space-between;
 }
+#header .left-nav{
+    width:600px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .left-nav h1{
+    width:115px;
+    height:28px;
+    background:url(../img/logo.svg);
+    margin-right:30px;
+    text-indent: -9999px;
+}
+#header .left-nav h1 a{
+    display:block;
+}
+#header .left-nav .gnb{
+    display:flex;
+}
+#header .left-nav .gnb li{
+    display:flex;
+    justify-content: center;
+    width:120px;
+}
+#header .left-nav .gnb .left-line{
+    position:relative;
+}
+#header .left-nav .gnb .left-line:before{
+    content:"";
+    width:1px;
+    height:10px;
+    background:gray;
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+#header .left-nav .gnb li a{
+    font-size: var(--h-font-size);
+    text-align: center;
+}
+#header .right-nav{
+    width:450px;
+    background:red;
+}
+
+
 #main {
   margin: 0 auto;
   max-width: 1280px;

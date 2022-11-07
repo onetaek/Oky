@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
     <title>커뮤니티사이트</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="headerWrap">
-        <header id="header">
-            <h1>로고</h1>
-            <nav>
-                <h2>주요이용메뉴</h2>
-                <ul>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                </ul>
-            </nav>
-            <nav>
-                <h2>계정관련이용메뉴</h2>
-                <ul>
-                    <li><input><input type="text" placeholder=""></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                </ul>
-            </nav>
-        </header>
+      <header id="header">
+        <h1>로고</h1>
+        <nav>
+          <h2>주요이용메뉴</h2>
+          <ul>
+            <li><a>Q&A</a></li>
+            <li><a>커뮤니티</a></li>
+            <li><a>공지사항</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h2>계정관련이용메뉴</h2>
+          <ul>
+            <li>
+              <button>검색아이콘</button><input /><input
+                type="text"
+                placeholder="검색"
+              />
+            </li>
+            <li><a>로그인</a></li>
+            <li><a>회원가입</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
-    
     <main id="main">
+      <aside id="aside">
+        <h3>인기태그</h3>
+        <ul>
+          <li>#java</li>
+          <li>#spring</li>
+          <li>#javascript</li>
+          <li>#springboot</li>
+          <li>#react</li>
+        </ul>
+      </aside>
+      <div id="sectionWrap">
         <section id="section1">
-            <h3>인기태그</h3>
             <ul>
-                <li>#java</li>
-                <li>#spring</li>
-                <li>#javascript</li>
-                <li>#springboot</li>
-                <li>#react</li>
+              <li>
+                <h2><a>Q&A</a></h2>
+              </li>
+              <li>
+                <h2><a>커뮤니티</a></h2>
+              </li>
+              <li>
+                <h2><a>공지사항</a></h2>
+              </li>
             </ul>
         </section>
         <section id="section2">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+
         </section>
+        <section id="section3">
+            
+        </section>
+      </div>
     </main>
-</body>
+    <footer></footer>
+  </body>
 </html>

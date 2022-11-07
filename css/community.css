@@ -1,36 +1,193 @@
-@charset "utf-8";
+/*header*/
+#headerWrap {
+    width: 100%;
+    border-bottom: black 2px solid;
+  }
+  #header {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 64px;
+    background: rgb(255, 197, 197);
+    display:flex;
+    justify-content:space-between;
+  }
+  #header .left-nav{
+      width:600px;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  #header .left-nav h1{
+      width:115px;
+      height:28px;
+      background:url(../img/logo.svg);
+      margin-right:30px;
+      text-indent: -9999px;
+  }
+  #header .left-nav h1 a{
+      display:block;
+  }
+  #header .left-nav .gnb{
+      display:flex;
+  }
+  #header .left-nav .gnb li{
+      display:flex;
+      justify-content: center;
+      width:120px;
+  }
+  #header .left-nav .gnb .left-line{
+      position:relative;
+  }
+  #header .left-nav .gnb .left-line:before{
+      content:"";
+      width:1px;
+      height:10px;
+      background:gray;
+      position:absolute;
+      left:0;
+      top:50%;
+      transform:translateY(-50%);
+  }
+  #header .left-nav .gnb li a{
+      font-size: var(--h-font-size);
+      text-align: center;
+  }
+  #header .right-nav{
+      width:450px;
+      background:red;
+  }
+  /* header 끝 */
 
-.section#community {
-    margin-top: 64px;
-    /* width: 10; */
-    /* height: 500px; */
-    border: 5px solid #f00;
-}
 
-#main {
+
+  
+  #main {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    /* background: rgb(201, 201, 255); */
+    height: 100vh;
     display: flex;
-    align-items: flex-start;
+    border: 2px solid #f00;
+  }
+  #aside {
+    width: 300px;
+    height: 100%;
+    background: rgb(186, 255, 186);
+    margin-right: 50px;
+  }
 
-}
-#main > .box {
-    width:var(--aside-width);
-    height:100vh;
-    background:rgb(186, 255, 186);
-    margin-right:50px;
-}
-
-
-
+  /* aside  끝*/
 
 
 
 
 
-
-
-
-
-
-
-
-
+  #sectionWrap {
+    width: 100%;
+    height: 100%;
+    /* background: rgb(255, 255, 188); */
+    /* display:flex;
+    flex-direction: column; */
+    /* justify-content:space-between; */
+  }
+  #section1 {
+    width: 100%;
+    height: 100%;
+    /* background-color: #f00; */
+    /* margin-right: 1rem; */
+    /* height: 30%; */
+    /* background:rgb(255, 182, 255); */
+    /* border: 1px solid #0f0; */
+  }
+  #section1 > .title {
+    height: 100px;
+    border: 2px solid #0f0;
+    margin:2rem 2rem 2rem 0;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    line-height: 175%;
+  }
+  #section1 > .title > span {
+    margin-left: 3rem;
+  }
+  #section1 > .title > span:first-child {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  #section1 > .title > span:last-child {
+    font-size: 0.8rem;
+    color: rgb(70, 70, 70);
+  }
+  #form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(200, 200, 200, 0.4);
+  }
+  #form > .container >.w_btn {
+    display: block;
+    width: 120px;
+    height: 45px;
+    border: 1px solid rgb(107, 173, 240);
+    background-color: rgb(107, 173, 240);
+    border-radius: 0.4rem;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    line-height: 45px;
+    text-align: center;
+  }
+  #form > .container >.w_btn:hover {
+    filter: brightness(105%);
+  }
+  #form > .container >.w_btn > .icon {
+    margin-right: 0.5rem;
+  }
+  #form > .list {
+    /* border: 5px solid #f00; */
+    width: 400px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #form > .list > .item {
+    width: 60px;
+    height: 40px;
+    /* border: 1px solid #000; */
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  #form > .list > .item:hover {
+    background-color: rgb(230, 230, 230);
+  }
+  #form > .select {
+    width: 120px;
+    height: 45px;
+    border: 1px solid rgba(80, 80, 80, 0.3);
+    border-radius: 0.4rem;
+    line-height: 45px;
+    text-align: center;
+    transition: 1s;
+  }
+  #form > .select > .item > .icon {
+    margin-right: 0.5rem;
+  }
+  #form > .select:hover > .item {
+    /* font-weight: 600; */
+    border-radius: 0.4rem;
+    height: 44px;
+    border: 1px solid rgba(80, 80, 80, 1);
+  }
+  

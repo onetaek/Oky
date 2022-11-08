@@ -6,33 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <script
+      src="https://kit.fontawesome.com/664642bde1.js"
+      crossorigin="anonymous"
+    ></script>
     <title>커뮤니티사이트</title>
   </head>
   <body>
     <div id="headerWrap">
       <header id="header">
         <div class="left-nav">
-            <h1><a href="#">로고</a></h1>
-            <nav>
-              <h2 class="hidden">주요이용메뉴</h2>
-              <ul class="gnb">
-                <li><a href="#">Q&A</a></li>
-                <li class="left-line"><a href="#">커뮤니티</a></li>
-                <li class="left-line"><a href="#">공지사항</a></li>
-              </ul>
-            </nav>
+          <h1><a href="#">로고</a></h1>
+          <nav>
+            <h2 class="hidden">주요이용메뉴</h2>
+            <ul class="gnb">
+              <li><a href="#">Q&A</a></li>
+              <li class="left-line"><a href="#">커뮤니티</a></li>
+              <li class="left-line"><a href="#">공지사항</a></li>
+            </ul>
+          </nav>
         </div>
         <nav class="right-nav">
           <h2 class="hidden">계정관련이용메뉴</h2>
-          <ul>
-            <li>
-              <button>검색아이콘</button><input /><input
-                type="text"
-                placeholder="검색"
-              />
+          <ul class="gnb">
+            <li class="search">
+              <button>
+                <i class="fa fa-light fa-magnifying-glass"></i>
+                <input type="text" placeholder="검색" />
+              </button>
             </li>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
+            <li class="login admin"><a href="#">로그인</a></li>
+            <li class="join admin"><a href="#">회원가입</a></li>
           </ul>
         </nav>
       </header>
@@ -50,18 +54,19 @@
       </aside>
       <div id="sectionWrap">
         <section id="section1">
+          <div class="title">
             <h2>Q&A</h2>
+            <span>좋은 질문과 답변으로 동료의 시간을 아껴주세요.</span>
+          </div>
         </section>
         <section id="section2">
-            <h2>커뮤니티</h2>
+          <h2>커뮤니티</h2>
         </section>
         <section id="section3">
-            <h2>공지사항</h2>
+          <h2>공지사항</h2>
         </section>
       </div>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>

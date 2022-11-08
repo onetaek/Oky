@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Lato", "Noto Sans KR", sans-serif;
+  
+  }
+  body,
+  h2,
+  button,
+  p,
+  small {
+    /* margin: 0;
+    padding: 0; */
+  }
+  a {
+    
+    
+  }
+  button {
+    background: none;
+    border: 0;
+  }
+  .hidden {
+    position: absolute;
+    left: -9999px;
+  }
+  /*-------------------------------Header-----------------------------------*/
+  body {      
+          width: 100%;; height: 100vh;
+       }
+  #div1 {
+           width: 448px; height: 670px;
+           position: relative;
+           margin:0 auto;
+           top: 150px;
+        }   
+  #div1 .logo {
+           margin-left: auto;
+           width: 65px;
+           max-width: 100%;
+           margin-right: auto;
+           vertical-align: middle;
+           display: block;
+               }
+#div1 h2 {     
+           margin-top: 20px;
+           font-weight: 700;
+           font-size: 28px;
+           text-align: center;
+           letter-spacing: -1px
+                }
+#div1 .hh {       
+             text-align: center;
+             margin-top: 12px;
+             font-size: 13px;
+             color: #a3a4a7;
+             margin-bottom: 30px;
+                 }
+#div1 .div2>span { 
+             color: #222; font-size: 13px;             
+                 }
+div.aimages  {
+             width: 450px;
+             display: grid;
+             grid-template-columns: 1fr 1fr 1fr ;
+             gap:9px;
+             margin-top: 10px;          
+             }
+div.aimages>a { 
+             border: 1px solid #d9d9db;
+             width: 142px; height: 38px;
+             border-radius: 8px;
+              }
+div.aimages svg {
+             margin-left: 57px;
+             margin-top: 5px;
+             width: 24px; height: 26px;
+             
+                }
+div.aimages .im1 {
+             background: url(../img/capgher.PNG);
+                 } 
+div.aimages .im2 {
+             background: url(../img/capgher2.PNG);
+                  }
+div.aimages .im3 {
+             background: url(../img/capgher3.PNG);
+                  }
+div.aimages .im4 {
+             background: url(../img/capgher4.PNG);
+                  }
+div.aimages .im5 {
+              background: url(../img/capgher5.PNG);
+                  }
+
+
+#div3{
+             margin-top: 20px;
+             position: relative;
+             text-align: center;
+             display: inline-block;
+             width:450px;             
+      }
+#div3 span{
+             font-size: 13px;
+             color: #a3a4a7;
+          }
+#div3 span::after{
+             position: absolute;
+             top:12px;
+             left:0;
+             display: block;
+             content: "";
+             height: 1px;
+             width: 130px;
+             background-color: #a3a4a7;
+                  }
+#div3 span::before{
+             position: absolute;
+             display: block;
+             content: "";
+             top:12px;
+             right:0;
+             height: 1px;
+             width: 130px;
+             background-color: #a3a4a7;
+                   }
+#form1 { 
+             margin-top: 30px;
+       }
+#form1 label{
+             display :block;
+             font-size: 13px;
+            }
+#form1 .box {
+             width: 448px; height: 42px;
+             border-radius: 8px;
+             border: 1px solid #d9d9db;
+             margin-top: 8px;
+             box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+             font-size: 16px;
+             padding-left: 15px;
+            }
+#form1 .pwbox {
+              margin-top: 25px;
+              }
+#form1 .find {
+              margin-left: 395px;
+              margin-top: 23px;
+              font-size: 13px;              
+             }
+#form1 .finda {
+               color: #5ba4f8;
+               text-decoration: none;
+              }
+#form1 .submit1 {
+               width: 448px; height: 42px;
+               border-radius: 8px;
+               border: 1px solid #0f0;
+               margin-top: 23px;
+               background-color: #0f0;
+               color: #fff;
+               font-size: 15px;
+                 }
+#form1 .loginyes {
+               font-size: 13px;
+               color: #8b8c8d;
+               margin-top: 25px;
+               margin-left: 120px;
+               margin-right: 120px;
+                 }
+#form1 .loginyes>a {          
+               margin-left: 5px;
+               color: #5ba4f8;
+               text-decoration:underline;
+                
+                 }

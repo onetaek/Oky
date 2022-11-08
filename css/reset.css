@@ -3,7 +3,8 @@
 :root {
     --max-width: 1280px;
     --aside-width: 300px;
-    --h-font-size: 1rem;
+    --h-font-size: 0.9rem;
+    --main-color: #0f0;
 }
 body {
     width: 100%;

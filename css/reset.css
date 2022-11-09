@@ -5,6 +5,8 @@
     --aside-width: 300px;
     --h-font-size: 0.9rem;
     --main-color: #0f0;
+    --footer-color:rgb(131, 131, 131);
+    --header-color:rgb(169, 169, 169);
 }
 body {
     width: 100%;

@@ -74,6 +74,12 @@
     margin-left: 1.5rem;
     font-size: 0.8rem;
   }
+  .board-container .title-container a{
+    display:block;
+  }
+  .board-container .title-container a:hover{
+    text-decoration: underline;
+  }
   /* ================================== */
   .board-container .tag-container {
     width: 25%;

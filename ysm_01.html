@@ -7,54 +7,87 @@
     <title>Document</title>
     <link rel="stylesheet" href="stylesheets/reset.css">
     <script src="https://kit.fontawesome.com/5a88511978.js" crossorigin="anonymous"></script>
+    <!-- summernot 추가 -->
+    <link rel="stylesheet" href="summernote_api/summernote-lite.css">
+    <script src="summernote_api/summernote-lite.js"></script>
+    <script src="summernote_api/summernote-ko-KR.js"></script>
+    
+    <script defer>
+        $(document).ready(function() {	
+            $('#summernote').summernote({
+                height: 300,                 // 에디터 높이
+                minHeight: null,             // 최소 높이
+                maxHeight: null,             // 최대 높이
+                focus: true,                  // 에디터 로딩후 포커스를 맞출지 여부
+                lang: "ko-KR",					// 한글 설정
+                placeholder: '내용을 입력해 주세요'	//placeholder 설정
+            });
+        });
+    </script>
     <style>
-        .section#achive {
+        .section {
             margin: 0 auto;
             width: 1280px;
             margin-top: 80px;
             height: 90vh;
-            border: 5px solid black;
+        }
+        #archive{
+            margin:0 220px;
+            height: 100%;
+            border: 1px solid black;
         }
         #top{
             position: relative;
             display: inline-block;
-            border: 1px solid gray;
-            width: 100%;
-        }
-        #toptext::before{
-            content: "";
-            width:5% ;
-            height: 1px;
-            background-color: black;
-            position: absolute;
-            left:0;
-            top:50%;
-
-        }
-        #toptext::after{
-            content: "";
-            width:90% ;
-            height: 1px;
-            background-color: black;
-            position: absolute;
-            right:0;
-            top:50%;
-
         }
         #toptext{
             
-            margin-left: 7%;
-            border:1px solid black;
-            display: inline;
+        }
+        #toptext::after{
+            position: absolute;
+            background-color: black;
+            width:100%;
+            height: 1px;
+            content:"";
+            
+        }
+        #toptext::before{
+            position: absolute;
+            background-color: black;
+            height: 1px;
+            width:100%;
+            content:"asdf";
+            
         }
     </style>
 </head>
 
 <body>
     
-    <section class="section" id="achive">
-        <div id="top">
-            <div id="toptext">asdfasdfsadf</div>
+    <section class="section">
+        <div id="archive">
+            <div id="top" >
+                <div id="toptext">Q&A / 기술</div> 
+            </div>
+            <div id="user">
+                <i class="fa-regular fa-bookmark"></i> 
+                <i class="fa-solid fa-bolt"></i>
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                <i class="fa-regular fa-eye"></i>
+            </div>
+            <div id="main">
+                <h1 id="title">제목 들어갈 자리</h1>
+                <p id="content">이것은 내용입니다.</p>
+                <div id="tag">태그랑 추천 기능 넣어줄 자리</div>
+            </div>
+
+            <section>
+                <div></div>
+                <div>
+                    <label>댓글 들어갈 자리</label>
+                    <textarea id="summernote" name="editordata"></textarea>
+                </div>
+            </section>
         </div>
 
     </section>

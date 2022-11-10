@@ -122,16 +122,14 @@
 /*----------main---------------*/
 #main {
   padding-top: 64px;
+  padding-bottom:30px;
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
   /* background: rgb(201, 201, 255); */
-  height: 200vh;
   display: flex;
   /* border: 2px solid #f00; */
 }
-
-
 /*-----footer-----*/
 #footerWrap{
   width:100%;

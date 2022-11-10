@@ -246,6 +246,16 @@ margin-right: 2rem;
   font-size: 0.8rem;
 }
 
+/*여기가 추가한 부분임돠*/
+.board-container .title-container a{
+  display:block;
+}
+.board-container .title-container a:hover{
+  text-decoration: underline;
+}
+/*여기가 추가한 부분임돠 끝*/
+
+
 /* ================================== */
 .board-container > .tag-container {
   height: 100px;

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <script src="https://kit.fontawesome.com/5a88511978.js" crossorigin="anonymous"></script>
+    <style>
+        .section#achive {
+            margin: 0 auto;
+            width: 1280px;
+            margin-top: 80px;
+            height: 90vh;
+            border: 5px solid black;
+        }
+        #top{
+            position: relative;
+            display: inline-block;
+            border: 1px solid gray;
+            width: 100%;
+        }
+        #toptext::before{
+            content: "";
+            width:5% ;
+            height: 1px;
+            background-color: black;
+            position: absolute;
+            left:0;
+            top:50%;
+
+        }
+        #toptext::after{
+            content: "";
+            width:90% ;
+            height: 1px;
+            background-color: black;
+            position: absolute;
+            right:0;
+            top:50%;
+
+        }
+        #toptext{
+            
+            margin-left: 7%;
+            border:1px solid black;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section class="section" id="achive">
+        <div id="top">
+            <div id="toptext">asdfasdfsadf</div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

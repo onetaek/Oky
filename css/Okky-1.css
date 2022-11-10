@@ -118,6 +118,9 @@ div.aimages .im5 {
 #form1 .pwbox {
               margin-top: 25px;
               }
+#form1 .pwbox2 {
+               margin-top: 25px;
+               }
 #form1 .email {
               margin-top: 25px;
               }
@@ -138,12 +141,12 @@ div.aimages .im5 {
                    }
 .emailY #emailB {
                 width: 65px; height: 25px;                
-                border: 1px solid black;
+                border: 1px solid rgb(119, 118, 118);
                 border-radius: 9999px;
                 } 
 .emailY #emailB .emailbutton {
-                border: 1px solid black;
-                
+                border: 5px solid var(--main-color);
+                border-radius: 9999px;
                              }
 #form1 .submit1 {
                width: 448px; height: 42px;

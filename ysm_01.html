@@ -108,7 +108,7 @@
             flex-direction: row;
             gap: 1rem;   
         }
-        #temp{
+        .temp{
             background-color: black;
             width: 2.5rem;
             height: 2.5rem;
@@ -162,6 +162,44 @@
             height: 100%;
 
         }
+        #uComment{
+            margin-top: 2rem;
+        }
+        .userComment{
+            
+            padding-bottom: 1rem ;
+            border-bottom: 1px solid black;
+        }
+        #userInfoWrap{
+            margin-top:2rem ;
+            width: inherit;
+            height: 4rem;
+            display: flex;
+            
+            
+        }
+        #userInfo{
+            flex:5;
+            display: flex;
+            gap:10px;
+        }
+        #bm{
+            flex:5;
+            display: flex;
+            gap:20px;
+            font-size: 2.0rem;
+            height: 100%;
+            line-height: 2rem;
+            justify-content: right;
+            padding-right: 20px;
+            
+        }
+        #userNameUnder{
+            display:flex;
+            gap:10px;
+            line-height: 1.5;
+        }
+      
     </style>
 </head>
 <!--
@@ -182,7 +220,28 @@
                 <p id="toptext">Q&A / 기술</p> 
             </div>
             <div id="main">
-                <div id="userInfo"></div>
+                <div id="userInfoWrap">
+                    <div id="userInfo">
+                        <div id="userPic">
+                            <div class="temp"></div>
+                        </div>
+                        <div>
+                            <div id="userName">userName</div>
+                            <div id="userNameUnder">
+                                <span><i class="fa-solid fa-bolt"></i> 0</span>
+                                <span>&#183;</span>
+                                <span >약 24시간 전</span>
+                                <span>&#183;</span>
+                                <span><i class="fa-regular fa-eye"></i> 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bm">
+                        <a href=""><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                        <a href=""><i class="fa-regular fa-bookmark"></i> </a>
+                    </div>
+                    
+                </div>
                 <h1>데이터베이스 기본키 여러개</h1>
                 <div id="maincontent">
                     <p>DB에서 기본키 제약 조건중 하나가 "테이블은 오직 하나의 기본키를 가질 수 있다" 라고 나와있는데</p>
@@ -209,7 +268,7 @@
                     <form method="post">
                         <div id="writecomment">
                             <div>
-                                <div id="temp"></div>
+                                <div class="temp"></div>
                             </div>
                             <div >                            
                                 <textarea id="summernote" name="editordata"></textarea>                            
@@ -217,6 +276,35 @@
                         </div>
                         <button>댓글쓰기</button>
                     </form>
+                    
+                </div>
+                <div id="uComment">
+                    <ul id="commentList">
+                        <li class="userComment">
+                            <div class="comUser"></div>
+                            <div class="comcontent">
+                               <p> 가까운 도서관에도 소장중이어서 읽어봐야겠습니다. 책 추천 감사합니다.</p>
+                               <p>그런데 혹시 oneoneone.kr 사이트 관계자분이신가요?</p>
+                               <p>이런 IT 정보 사이트가 최근에 많이 서비스 되는 것 같아 궁금해서 여쭤봅니다.</p>
+                            </div>
+                        </li>
+                        <li class="userComment">
+                            <div class="comUser"></div>
+                            <div class="comcontent">
+                               <p> 가까운 도서관에도 소장중이어서 읽어봐야겠습니다. 책 추천 감사합니다.</p>
+                               <p>그런데 혹시 oneoneone.kr 사이트 관계자분이신가요?</p>
+                               <p>이런 IT 정보 사이트가 최근에 많이 서비스 되는 것 같아 궁금해서 여쭤봅니다.</p>
+                            </div>
+                        </li>
+                        <li class="userComment">
+                            <div class="comUser"></div>
+                            <div class="comcontent">
+                               <p> 가까운 도서관에도 소장중이어서 읽어봐야겠습니다. 책 추천 감사합니다.</p>
+                               <p>그런데 혹시 oneoneone.kr 사이트 관계자분이신가요?</p>
+                               <p>이런 IT 정보 사이트가 최근에 많이 서비스 되는 것 같아 궁금해서 여쭤봅니다.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

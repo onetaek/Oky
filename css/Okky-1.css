@@ -131,22 +131,46 @@ div.aimages .im5 {
                margin-top: 25px;
                }
 .emailY {
-         display: flex;
-         margin-top: 30px;
+               display: flex;
+               margin-top: 30px;
         }
 .emailY .emailYY {
-                    font-size: 13px;
-                    color: #4b4c4d;
-                    width: 500px;
+               font-size: 13px;
+               color: #2b2c2c;
+               width: 500px;
                    }
-.emailY #emailB {
-                width: 65px; height: 25px;                
-                border: 1px solid rgb(119, 118, 118);
-                border-radius: 9999px;
-                } 
-.emailY #emailB .emailbutton {
-                border: 5px solid var(--main-color);
-                border-radius: 9999px;
+.toggleSwitch {
+                width: 60px;
+                height: 25px;
+                display: block;
+                position: relative;
+                border-radius: 80px;
+                background-color: #fff;
+                box-shadow: 0 0 1rem 1px rgba(0 0 0 / 15%);
+                cursor: pointer;
+                  }
+                  
+.toggleSwitch .toggleButton {
+                width: 23px;
+                height: 23px;
+                position: absolute;
+                top: 50%;
+                left: 2px;
+                transform: translateY(-50%);
+                    border-radius: 50%;
+                    background: #f03d3d;
+                            }
+#toggle:checked ~ .toggleSwitch {
+                background: #f03d3d;
+                                }
+                  
+#toggle:checked ~ .toggleSwitch .toggleButton {
+               left: calc(100% - 24px);
+               background: #fff;
+                                              }
+                  
+.toggleSwitch, .toggleButton {
+               transition: all 0.2s ease-in;
                              }
 #form1 .submit1 {
                width: 448px; height: 42px;
@@ -157,6 +181,12 @@ div.aimages .im5 {
                color: #fff;
                font-size: 15px;
                  }
+.Explanation>p {
+               text-align: left;
+               font-size: 13px;
+               color: #8b8c8d;
+               margin-top: 8px;
+           } 
 #form1 .loginyes {
                font-size: 13px;
                color: #8b8c8d;

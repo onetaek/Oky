@@ -67,9 +67,13 @@
             width:20px;
             content:"";   
         }
-        #main_under{
-            margin-bottom: 2rem;
+        #main {
             border-bottom: 1px solid black;
+        }
+        #main_under{
+            height: 2.5rem;
+            margin-bottom: 2rem;
+            
         }
         #main h1{
             margin-top: 2rem;
@@ -88,9 +92,7 @@
         #main_under{
             display: flex;
             align-items: center;
-        }
-        #comment{
-            
+            position: relative;
         }
         #commentWrap{
             margin-top: 1rem;
@@ -104,9 +106,7 @@
             display: flex;
             flex-wrap: nowrap;
             flex-direction: row;
-            gap: 1rem;
-            
-            
+            gap: 1rem;   
         }
         #temp{
             background-color: black;
@@ -125,18 +125,53 @@
             cursor:pointer;
             background-color: white;
         }
-        
+        #tagSetion{
+            display: flex;
+            margin-top: 2rem;
+
+        }
+        a.tag{
+            border-radius:40px ;
+            border: 1px solid black;
+            padding: 6px 12px;
+            margin: 2px 6px;
+        }
+        #like{
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            position: absolute;
+            right: 0;
+            
+            height: 100%;
+            border: 1px solid black;
+
+        }
+        #like>button{
+            padding-left:0.5rem;
+            padding-right:0.5rem;
+            height: 100%;
+            text-align: center;
+            align-content:center ;
+            
+        }
+        #like span{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding-left:1rem;
+            padding-right:1rem;
+            height: 100%;
+
+        }
     </style>
 </head>
 <!--
-    
- 
- 
 <i class="fa-regular fa-circle-check"></i>
 <i class="fa-solid fa-bolt"></i>
 <i class="fa-regular fa-bookmark"></i> 
 <i class="fa-solid fa-arrow-up-from-bracket"></i>
 <i class="fa-regular fa-eye"></i>
+<i class="fa-solid fa-chevron-up"></i>
+<i class="fa-solid fa-chevron-down"></i>
 -->
 
 <body>
@@ -156,11 +191,14 @@
                     <p>라고 하면서 설명이 돼있는데 잘 이해가 가질 않습니다, 무엇을 의미 하는 건가요?</p>
                 </div>
                 <div id="main_under">
-                    <div id="tag"><a href=""><span>#database</span></a></div>
+                    <div id="tagSection">
+                        <a href="" class="tag"><span>#database</span></a>
+                        <a href="" class="tag"><span>#python</span></a>
+                    </div>
                     <div id="like">
-                        <button></button>
-                        <span></span>
-                        <button></button>
+                        <button><i class="fa-solid fa-chevron-down"></i></button>
+                        <span>0</span>
+                        <button><i class="fa-solid fa-chevron-up"></i></button>
                     </div>
                 </div>
                 

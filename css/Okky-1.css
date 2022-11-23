@@ -141,7 +141,7 @@ div.SNSimages .im5 {
                color: #2b2c2c;
                width: 500px;
                    }
-.toggleSwitch {
+/* .toggleSwitch {
                 width: 60px;
                 height: 25px;
                 display: block;
@@ -162,7 +162,7 @@ div.SNSimages .im5 {
                 transform: translateY(-50%);
                     border-radius: 50%;
                     background: #f03d3d;
-                            }
+                            } */
 #toggle:checked ~ .toggleSwitch {
                 background: #f03d3d;
                                 }

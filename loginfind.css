@@ -1,13 +1,14 @@
 body {      
     width: 100%; height: 100vh;
  }
-#div1 {
+ /* ------------------------------------로고-------------------------------- */
+#headerWrap {
      width: 448px; height: 670px;
      position: relative;
      margin:0 auto;
      top: 150px;
   }   
-#div1 .logo {
+#headerWrap .logo {
      margin-left: auto;
      width: 65px;
      max-width: 100%;
@@ -15,28 +16,30 @@ body {
      vertical-align: middle;
      display: block;
          }
-#div1 h2 {     
+#headerWrap h2 {     
      margin-top: 20px;
      font-weight: 700;
      font-size: 28px;
      text-align: center;
      letter-spacing: -1px
           }
-#div1 .hh {       
+#headerWrap .Explanation {       
        text-align: center;
        margin-top: 12px;
        font-size: 13px;
        color: #a3a4a7;
        margin-bottom: 30px;
            }
-#form1 { 
+ /* ------------------------------------계정찾기-------------------------------- */
+
+#findbox { 
        margin-top: 30px;
  }
-#form1 label{
+#findbox label{
        display :block;
        font-size: 13px;
       }
-#form1 .box {
+#findbox .emailbox {
        width: 448px; height: 42px;
        border-radius: 8px;
        border: 1px solid #d9d9db;
@@ -45,14 +48,14 @@ body {
        font-size: 16px;
        padding-left: 15px;
       }
-#form1 .find { 
+#findbox .find { 
      display: flex;
      width: 448px;
      height: 38px;
      justify-content: space-between;
              }
 
-#form1 .submit2 { 
+#findbox .cancle { 
           width: 215px; height: 38px;
           border-radius: 8px;
           border: 1px solid #d9d9db;
@@ -61,7 +64,7 @@ body {
           font-size: 15px;
           text-align : center;
                         }
- #form1 .submit1 {
+ #findbox .findbutton {
           width: 215px; height: 38px;
           border-radius: 8px;
           border: 1px solid var(--main-color);
@@ -70,7 +73,7 @@ body {
           color: #fff;
           font-size: 15px;
                   }
-#form1 .submit2 .submita {
+#findbox .cancle .canclelink {
           line-height: 38px;
           transform: translateY(-50%);
                          }

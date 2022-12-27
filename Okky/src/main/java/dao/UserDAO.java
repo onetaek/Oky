@@ -13,18 +13,18 @@ public class UserDAO {
 	Connection conn;
 	ResultSet rs;
 	
-	String dbURL = "jdbc:mariadb://127.0.0.1:3306/oky";
+	String dbURL = "jdbc:mariadb://127.0.0.1:3308/oky";
 	String dbID = "root";
-	String dbPassword = "dpdlvldzm419!";
+	String dbPassword = "5452";
 	
 	public void getCon() {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
 			conn = DriverManager.getConnection(dbURL,dbID,dbPassword);
-			System.out.println("연결이 완료되었습니다.");
+			System.out.println("�뿰寃곗씠 �셿猷뚮릺�뿀�뒿�땲�떎.");
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println("연결에 실패하였습니다.");
+			System.out.println("�뿰寃곗뿉 �떎�뙣�븯���뒿�땲�떎.");
 			e.printStackTrace();
 		}
 	}
@@ -33,7 +33,7 @@ public class UserDAO {
 	
 	
 	public void insertUser(UserDTO userDTO) {
-		System.out.println("insertBoard실행");
+		System.out.println("insertBoard�떎�뻾");
 		getCon();
 		
 		try {
@@ -65,7 +65,7 @@ public class UserDAO {
 	public int getUser(String id, String password) {
 		getCon();
 		
-		//회원 정보가 없을경우에는 0을 리턴하게됨
+		//�쉶�썝 �젙蹂닿� �뾾�쓣寃쎌슦�뿉�뒗 0�쓣 由ы꽩�븯寃뚮맖
 		int result = 0;
 		
 		try {
@@ -75,7 +75,7 @@ public class UserDAO {
 			pstmt.setString(2, password);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
-				result = rs.getInt(1);//회원정보가 동일하다면 1을 리턴함
+				result = rs.getInt(1);//�쉶�썝�젙蹂닿� �룞�씪�븯�떎硫� 1�쓣 由ы꽩�븿
 			}
 			conn.close();
 		} catch (Exception e) {
